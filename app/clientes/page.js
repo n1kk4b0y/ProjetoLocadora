@@ -11,9 +11,22 @@ export default function ClientesPage() {
   const [erro, setErro] = useState('');
 
   async function carregar(params = {}) {
-    const qs = new URLSearchParams(params).toString();
-    const res = await fetch(`/api/clientes${qs ? `?${qs}` : ''}`);
-    setClientes(await res.json());
+    try {
+      const qs = new URLSearchParams(params).toString();
+      const res = await fetch(`/api/clientes${qs ? `?${qs}` : ''}`);
+      const data = await res.json();
+
+      // Validação de segurança crucial aqui
+      if (Array.isArray(data)) {
+        setClientes(data);
+      } else {
+        console.error("A API retornou um erro em vez de uma lista:", data);
+        setClientes([]); // Garante que clientes continue sendo um array vazio para não quebrar a tela
+      }
+    } catch (error) {
+      console.error("Erro de rede ao buscar dados:", error);
+      setClientes([]);
+    }
   }
 
   useEffect(() => {
