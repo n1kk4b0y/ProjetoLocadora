@@ -86,7 +86,3 @@ git branch -M main
 git remote add origin https://github.com/SEU_USUARIO/aluguel-carros.git
 git push -u origin main
 ```
-
-Se vocês forem dois integrantes commitando, cada um deve rodar `git config user.name` /
-`user.email` com seus próprios dados antes de commitar, para que as contribuições de cada membro
-apareçam no histórico (exigido no item 5.1 da especificação).
