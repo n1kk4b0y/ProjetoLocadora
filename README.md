@@ -47,7 +47,6 @@ cp .env.example .env.local   # edite com a sua string de conexão (DATABASE_URL)
 npm run dev
 ```
 
-Acesse `http://localhost:3000`.
 
 ## Estrutura de pastas
 
@@ -71,18 +70,3 @@ lib/db.js                -> conexão com o PostgreSQL (pool)
 sql/                      -> os 6 scripts SQL exigidos no trabalho
 ```
 
-## Publicando no GitHub
-
-Este projeto já está pronto para virar um repositório Git. Para publicar na sua conta:
-
-```bash
-cd aluguel-carros
-git init
-git add .
-git commit -m "Versão inicial do Sistema de Aluguel de Carros"
-
-# Crie um repositório vazio no GitHub (pelo site, sem README/gitignore) e depois:
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/aluguel-carros.git
-git push -u origin main
-```
