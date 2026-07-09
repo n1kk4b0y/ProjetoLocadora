@@ -1,8 +1,3 @@
--- =========================================================
--- Script 3: Apagar os dados de todas as tabelas
--- Ordem importa por causa das chaves estrangeiras (RESTRICT):
--- primeiro a tabela "filha" (Aluguel), depois as "mãe" (Cliente, Carros)
--- =========================================================
 
 DELETE FROM Aluguel;
 DELETE FROM Carros;
