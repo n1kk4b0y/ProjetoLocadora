@@ -1,13 +1,3 @@
--- =========================================================
--- Script 1: Criação da base de dados e das tabelas
--- Sistema de Aluguel de Carros
--- =========================================================
-
--- Se estiver criando o banco pela primeira vez em um servidor PostgreSQL,
--- descomente as duas linhas abaixo e execute-as separadamente
--- (não é possível criar/usar o mesmo banco na mesma sessão em alguns clientes):
--- CREATE DATABASE aluguel_carros;
--- \c aluguel_carros
 
 DROP TABLE IF EXISTS Aluguel;
 DROP TABLE IF EXISTS Carros;
