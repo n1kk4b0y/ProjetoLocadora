@@ -1,10 +1,3 @@
--- =========================================================
--- Script 4: Consulta envolvendo mais de uma tabela, com dados
--- agregados e filtro.
---
--- Regra de negócio: valor total gasto e quantidade de aluguéis
--- realizados por cada cliente da cidade de Niterói.
--- =========================================================
 
 SELECT
     cl.nome                AS cliente,
