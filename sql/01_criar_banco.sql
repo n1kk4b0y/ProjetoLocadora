@@ -1,4 +1,8 @@
 
+
+CREATE DATABASE locadora_db;
+
+
 DROP TABLE IF EXISTS Aluguel;
 DROP TABLE IF EXISTS Carros;
 DROP TABLE IF EXISTS Cliente;
