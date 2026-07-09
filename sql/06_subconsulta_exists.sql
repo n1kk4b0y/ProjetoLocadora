@@ -1,9 +1,3 @@
--- =========================================================
--- Script 6: Subconsulta utilizando EXISTS
---
--- Regra de negócio: listar os carros que já foram alugados
--- pelo menos uma vez.
--- =========================================================
 
 SELECT
     c.id,
