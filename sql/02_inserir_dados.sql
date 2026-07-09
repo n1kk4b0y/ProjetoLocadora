@@ -1,6 +1,3 @@
--- =========================================================
--- Script 2: Inserção de dados de exemplo (mínimo 5 por tabela)
--- =========================================================
 
 INSERT INTO Carros (placa, modelo, marca, ano, valor_diaria) VALUES
 ('ABC1D23', 'Onix',     'Chevrolet', 2022, 120.00),
