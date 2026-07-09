@@ -33,9 +33,7 @@ CREATE TABLE Aluguel (
     valor                  NUMERIC(10,2) NOT NULL,
     status                 VARCHAR(20) NOT NULL DEFAULT 'ativo',
 
-    -- Regra de negócio: não é permitido excluir um cliente ou um carro
-    -- que já possua aluguéis registrados (histórico deve ser preservado).
-    -- Em caso de atualização do id (raro, mas previsto), propaga em cascata.
+
     CONSTRAINT fk_aluguel_cliente FOREIGN KEY (cliente_id)
         REFERENCES Cliente(id)
         ON DELETE RESTRICT
